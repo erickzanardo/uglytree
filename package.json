@@ -1,0 +1,19 @@
+{
+  "name": "uglytree",
+  "version": "1.0.0",
+  "description": "Simple terminal navigation tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "file",
+    "navigation",
+    "tree"
+  ],
+  "author": "Erick Zanardo",
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.7"
+  }
+}
