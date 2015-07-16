@@ -109,7 +109,21 @@ list.key('space', function() {
     if(err) throw err;
     if(stat.isDirectory()) {
       if(node.open) {
-        nodes.splice(index + 1, node.childrens); 
+
+        var removeSize = node.childrens;
+
+        var c = 0;
+        while(c < removeSize) {
+          var i = c + index + 1;
+          if(nodes[i].open) {
+            removeSize += nodes[i].childrens;
+            nodes[i].childrens = 0;
+            nodes[i].open = false;
+          }
+          c++;
+        }
+
+        nodes.splice(index + 1, removeSize); 
         node.childrens = 0;
         node.open = false;
         treeChanged();
