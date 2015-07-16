@@ -14,3 +14,7 @@ sudo npm install . -g
 
 To use, run utree on the folder you wish to visualize, to move down and up use j and k keys, to open a file on vim, or open/close folders, use space. To exist UglyTree just hit escape.
 
+## Requirements
+
+- vim
+- terminator
