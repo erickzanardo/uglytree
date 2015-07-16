@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var blessed = require('blessed');
 
 // Create a screen object.
