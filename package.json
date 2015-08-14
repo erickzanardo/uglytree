@@ -14,6 +14,6 @@
     "blessed": "^0.1.7"
   },
   "bin": {
-    "utree": "./index.js"
+    "utree": "./cli.js"
   }
 }
